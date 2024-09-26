@@ -20,32 +20,56 @@ header {
     padding: 10px;
     background-color: #E87EA1; /* Rosa pastel */
     color: #000;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
 }
 
 .header-left {
     display: flex;
-    align-items: center; /* Alinha a imagem e o nome verticalmente */
+    align-items: center;
 }
 
-.header-left h1 {
-    font-size: 1.5em;
-    color: #333;
-}
-
-.icon {
-    width: 22px;
-    margin-left: 10px;
-    margin-right: 10px;
+.header-left img.icon {
+    width: 40px; /* Ajusta o tamanho do ícone */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin-left: 20px; /* Espaçamento entre os itens */
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Alinha tudo à esquerda em telas menores */
+        padding: 15px; /* Aumenta o espaçamento em telas pequenas */
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca os itens da navegação em coluna */
+        align-items: flex-start; /* Alinha os links à esquerda */
+        width: 100%; /* Ocupa toda a largura da tela */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adiciona espaço entre os itens no layout vertical */
+    }
+}
+
 
 nav ul li a {
     text-decoration: none;
