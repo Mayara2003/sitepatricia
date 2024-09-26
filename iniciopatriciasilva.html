@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patricia Silva - Gestora e Mentora de Tráfego Pago</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão de Voltar ao Topo -->
+<a href="#topo" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+    <script>
+        // Captura o botão
+        const backToTopButton = document.getElementById('backToTop');
+    
+        // Adiciona um listener para quando o usuário rolar a página
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Mostra o botão quando o scroll for maior que 300px
+                backToTopButton.classList.add('show-back-to-top');
+            } else {
+                backToTopButton.classList.remove('show-back-to-top');
+            }
+        });
+    </script>
+    
+    <!-- Header -->
+    <header id="topo">
+        <div class="header-left">
+            <img src="imagens/analise-de-dados.png" alt="Ícone Gestão de Tráfego" class="icon">
+            <h1>Patricia Silva</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#trafego-pago">Tráfego Pago</a></li>
+                <li><a href="#mentoria">Mentoria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <div class="text-content">
+                <h2>Gestora e Mentora de Tráfego Pago, Patricia Silva</h2>
+                <p class="subtext">Ajudando empreendedores a escalarem seus negócios através do tráfego pago.</p>
+                <a href="#trafego-pago" class="btn">Saiba mais</a>
+            </div>
+            <div class="image-content">
+                <img src="imagens/imagem-principal.png" alt="Imagem Patricia Silva" class="main-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Tráfego Pago -->
+    <section id="trafego-pago">
+        <h2>Tráfego Pago</h2>
+        <p class="responsive-text"> O <span style="color: #E87EA1; font-weight: bold;">tráfego pago</span> é uma estratégia poderosa que permite aumentar rapidamente a <span style="color: #E87EA1; font-weight: bold;">visibilidade</span> do seu negócio, alcançando seu <span style="color: #E87EA1; font-weight: bold;">público-alvo</span> de forma precisa. Com <span style="color: #E87EA1; font-weight: bold;">anúncios direcionados</span>, você maximiza o <span style="color: #E87EA1; font-weight: bold;">retorno sobre o investimento</span>, gerando <span style="color: #E87EA1; font-weight: bold;">leads qualificados</span> e impulsionando suas vendas. Não fique para trás no competitivo mundo digital! Invista em tráfego pago e veja seu negócio crescer de forma <span style="color: #E87EA1; font-weight: bold;">exponencial</span>. Entre em contato e descubra como podemos ajudar!
+        </p>
+    </section>
+
+    <!-- Seção Mentoria -->
+    <section id="mentoria">
+        <h2>Mentoria</h2>
+        <p class="responsive-text">
+            Você está pronto para turbinar suas campanhas e alcançar <span style="color: #E87EA1; font-weight: bold;">resultados incríveis</span>? Ofereça um serviço de <span style="color: #E87EA1; font-weight: bold;">mentoria em tráfego pago</span> que vai transformar a forma como você anuncia! Juntos, vamos desenvolver <span style="color: #E87EA1; font-weight: bold;">estratégias personalizadas</span> e criar anúncios impactantes para maximizar seu <span style="color: #E87EA1; font-weight: bold;">retorno sobre o investimento</span>. Com minha experiência ao seu lado, você aprenderá a dominar o tráfego pago e a atuação de suas vendas de forma rápida e eficaz. Não perca mais tempo, <a href="https://wa.me/5511913029049?text=Olá%20Patricia,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" style="color: #000000; font-weight: bold;"> Clique aqui e entre em contato</a> e dê um passo decisivo para transformar seus resultados!
+        </p>        
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p class="responsive-text">Entre em contato comigo diretamente pelas redes sociais:</p>
+
+        <div class="contact-buttons">
+            <a href="https://wa.me/5511913029049?text=Olá%20Patricia,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.instagram.com/gestorapatriciasilva/" target="_blank" class="btn-instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Desenvolvido por Mayara Marques - &copy; 2024</p>
+    </footer>
+</body>
+</html>
